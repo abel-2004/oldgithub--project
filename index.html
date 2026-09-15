@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Ballon d'Or Winners</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f4f7fb, #dfe9f5);
+        color: #1f2937;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: #111827;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: #ffffff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card-header {
+        background: linear-gradient(135deg, #1f3c88, #4ea1d3);
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .rank {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.16);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .player-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .card-body {
+        padding: 20px;
+      }
+
+      .info {
+        margin: 10px 0;
+        font-size: 1rem;
+      }
+
+      .label {
+        font-weight: bold;
+        color: #374151;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Top Ballon d'Or Winners</h1>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-header">
+            <div class="rank">#1</div>
+            <p class="player-name">Lionel Messi</p>
+          </div>
+          <div class="card-body">
+            <p class="info"><span class="label">Country:</span> Argentina</p>
+            <p class="info"><span class="label">Awards:</span> 8</p>
+            <p class="info"><span class="label">Club:</span> Inter Miami</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="rank">#2</div>
+            <p class="player-name">Cristiano Ronaldo</p>
+          </div>
+          <div class="card-body">
+            <p class="info"><span class="label">Country:</span> Portugal</p>
+            <p class="info"><span class="label">Awards:</span> 5</p>
+            <p class="info"><span class="label">Club:</span> Al Nassr</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="rank">#3</div>
+            <p class="player-name">Michel Platini</p>
+          </div>
+          <div class="card-body">
+            <p class="info"><span class="label">Country:</span> France</p>
+            <p class="info"><span class="label">Awards:</span> 3</p>
+            <p class="info"><span class="label">Club:</span> Juventus</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="rank">#4</div>
+            <p class="player-name">Johan Cruyff</p>
+          </div>
+          <div class="card-body">
+            <p class="info"><span class="label">Country:</span> Netherlands</p>
+            <p class="info"><span class="label">Awards:</span> 3</p>
+            <p class="info"><span class="label">Club:</span> Barcelona</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="rank">#5</div>
+            <p class="player-name">Marco van Basten</p>
+          </div>
+          <div class="card-body">
+            <p class="info"><span class="label">Country:</span> Netherlands</p>
+            <p class="info"><span class="label">Awards:</span> 3</p>
+            <p class="info"><span class="label">Club:</span> AC Milan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
